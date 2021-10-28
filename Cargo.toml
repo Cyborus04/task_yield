@@ -1,0 +1,18 @@
+[package]
+categories = ["asynchronous"]
+description = "Executor-independent task yielding"
+edition = "2021"
+keywords = ["async", "utility"]
+license = "MIT OR Apache-2.0"
+name = "task_yield"
+repository = "https://github.com/Cyborus04/task_yield"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+async-std = {version = "1", features = ["attributes"]}
+futures = "0.3"
+tokio = {version = "1", features = ["rt", "macros"]}
